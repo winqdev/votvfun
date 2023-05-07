@@ -1,0 +1,117 @@
+body {
+    /* background-color: #17101f; */
+    background-image: url("/assets/background.png");
+    text-align: center;
+  }
+
+  h1 {
+    color: #808af8;
+    font-family: Consolas;
+  }
+
+  h2 {
+    color: #ba9cf7;
+    font-family: 'Consolas';
+  }
+
+  h3 {
+    color: #ba9cf7;
+    font-family: 'Consolas';
+  }
+
+  h4 {
+    color: #ba9cf7;
+    font-family: 'Consolas';
+  }
+
+  h5 {
+    color: #ba9cf7;
+    font-family: 'Consolas';
+  }
+
+  p {
+    color: #ebecec;
+    font-family: 'Consolas';
+  }
+
+  button {
+    height: 80px;
+    width: 105px;
+    height: 55px;
+    border-radius: 10px;
+    border: solid 3px;
+    margin-top: 3px;
+    margin-left: 1x;
+    margin-right: 1px;
+    background-color: #a67afd;
+    color: black;
+    font-family: 'Lucida Console';
+    cursor: pointer;
+  }
+
+  button.yes {
+    height: 80px;
+    width: 200px;
+    height: 55px;
+    border-radius: 10px;
+    border: solid 3px;
+    margin-top: 3px;
+    margin-left: 1x;
+    margin-right: 1px;
+    background-color: #a67afd;
+    color: black;
+    font-family: 'Lucida Console';
+    cursor: pointer;
+  }
+
+  input,
+  textarea {
+    font-family: "Roboto", sans-serif;
+  }
+
+  textarea {
+    grid-column: 2/4;
+    border-radius: 2em;
+    border: solid 3px var(--primary-clr);
+    padding: 0.5em 1em;
+    resize: none;
+    background-color: #8F00FF;
+    color: white;
+    height: 200px;
+    width: 500px;
+    font-size: 0.5em;
+  }
+
+ /* #loading-animation {
+  position: absolute;
+  top: 46%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(0deg);
+  background-image: url("/assets/kerfus.png");
+  width: 95px;
+  height: 65px;
+  animation-name: rotate;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+} */
+
+@keyframes rotate {
+  0% {
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    background-image: url("/assets/kerfus.png");
+    width: 95px;
+    height: 65px;
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    background-image: url("/assets/kerfus.png");
+    width: 95px;
+    height: 65px;
+    transform: translate(-50%, -50%) rotate(360deg); /* add the rotate() transform here */
+  }
+}
