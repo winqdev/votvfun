@@ -5,18 +5,21 @@ document.addEventListener("DOMContentLoaded", async function(event) {
   var body = document.getElementById("bodyid");
   var discord = document.getElementById("discord");
   var itch = document.getElementById("itch");
+  var archive = document.getElementById("archive");
 
     loader.style.animation = "rotate 1s infinite";
     body.style.backgroundColor = "black";
     body.style.backgroundImage = "none";
     discord.style.display = "none";
     itch.style.display = "none";
+    archive.style.display = "none";
     setTimeout(function() {
       body.style.opacity = 1;
       loader.style.animation = "none";
       body.style.backgroundImage = "url('/assets/background.png')";
       discord.style.display = "inline-block";
       itch.style.display = "inline-block";
+      archive.style.display = "inline-block";
       textstart();
     }, 2500);
 
